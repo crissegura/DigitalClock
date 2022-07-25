@@ -72,7 +72,6 @@ function blackMood(){
     body.style.color='white'
     moodwhite.style.display='block'
     moodblack.style.display='none'
-    moodwhite.style.color='white'
     
 }
 
