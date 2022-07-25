@@ -37,6 +37,19 @@ h1{
     margin-top: 40px;
     font-size: 40px;
 }
+#blackMood,#whiteMood{
+    margin-top: 20px;
+    width: 30px;
+    height: 25px;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    font-size: 20px;
+    border: none;
+    font-weight: bold;
+}
+#blackMood{
+    display: none;
+}
 footer{
     font-size: 20px;
     position: absolute;

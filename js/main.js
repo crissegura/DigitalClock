@@ -43,5 +43,43 @@ function dayAndHour(){
 }
 
 let reloadAllTime = setInterval(dayAndHour,1000)
- 
+
+//moodWorB
+let moodwhite = document.getElementById('whiteMood')
+let moodblack = document.getElementById('blackMood')
+
+moodwhite.onclick = ()=>{
+    whiteMood()
+}
+moodblack.onclick = ()=>{
+    blackMood()
+}
+
+
+function whiteMood(){
+    let body = document.getElementById('body')
+    body.style.backgroundColor='white'
+    body.style.color='black'
+    moodwhite.style.display='none'
+    moodblack.style.display='block'
+    moodblack.style.color='black'
+   
+}
+function blackMood(){
+    let body = document.getElementById('body')
+    body.style.backgroundColor='black'
+    body.style.color='white'
+    body.style.color='white'
+    moodwhite.style.display='block'
+    moodblack.style.display='none'
+    moodwhite.style.color='white'
+    
+}
+
+
+
+
+
+
+
 
