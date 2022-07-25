@@ -11,7 +11,7 @@ body{
     font-family: 'Mochiy Pop One', sans-serif;
 }
 main{
-    height: 600px;
+    height: 300px;
    display: flex;
    flex-direction: column;
    justify-content: center;
