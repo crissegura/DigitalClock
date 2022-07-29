@@ -15,19 +15,16 @@ body{
     display: flex;
     flex-direction: column;
 }
-.mainIndex{
+.mainIndex,main{
+    margin-top: 100px;
    display: flex;
    flex-direction: column;
    justify-content: center;
    align-items: center;
 }
 @media(min-width:992px){
-    main{
-        height: 400px;
-       display: flex;
-       flex-direction: column;
-       justify-content: center;
-       align-items: center;
+    .mainIndex{
+        margin-top: 50px;
     }
 }
 h1{
@@ -106,6 +103,7 @@ footer{
 }
 #start,#stop{
    background-color: transparent;
+   border: none;
 }
 #start:active,#stop:active{
     transform: scale(0.9);

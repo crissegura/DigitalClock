@@ -13,18 +13,6 @@ ligthmode.onclick = ()=>{
 
     let backText = document.getElementById('backText')
     backText.style.color='black'
-
-    let start = document.getElementById('start')
-    start.style.color='black'
-    start.style.border='solid 0.5px black'
-    start.style.fontWeight='bold'
-
-    let stop = document.getElementById('stop')
-    stop.style.color='black'
-    stop.style.border='solid 0.5px black'
-    stop.style.fontWeight='bold'
-
-
 }
 darkmode.onclick = ()=>{
     let body = document.getElementById('bodyCH')
@@ -37,14 +25,6 @@ darkmode.onclick = ()=>{
 
     let backText = document.getElementById('backText')
     backText.style.color='white'
-
-    let start = document.getElementById('start')
-    start.style.color='white'
-    start.style.border='solid 0.5px white'
-
-    let stop = document.getElementById('stop')
-    stop.style.color='white'
-    stop.style.border='solid 0.5px white'
 }
 
 //chronometer
