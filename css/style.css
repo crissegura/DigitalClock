@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
 }
+/*--------DIGITALWATCH-------*/
 body{
     min-height: 100vh;
     position: relative;
@@ -14,7 +15,7 @@ body{
     display: flex;
     flex-direction: column;
 }
-main{
+.mainIndex{
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -44,7 +45,7 @@ h1{
     justify-content: right;
     padding: 20px;
 }
-#blackMood,#whiteMood{
+#blackMood,#whiteMood,#ligthmode,#darkmode{
     background-color: transparent;
     margin-top: 20px;
     width: 40px;
@@ -54,8 +55,24 @@ h1{
     border: none;
     font-weight: bold;
 }
-#blackMood{
+#blackMood,#darkmode{
     display: none;
+}
+div{
+    margin: 10px;
+}
+#chronometer{
+    text-decoration: none;
+    padding: 8px;
+    text-align: center;
+    border: solid white 0.5px;
+    color: white;
+    border-radius: 25px;
+}
+#chronometer:hover{
+    background-color:rgba(6, 136, 153, 0.658);
+    font-weight: bold;
+    color: black;
 }
 footer{
     font-size: 20px;
@@ -67,3 +84,41 @@ footer{
 .pFooter{
     padding: 10px;
 }
+
+/*--------CHRONOMETER-------*/
+.headerCH{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.back{
+    padding: 20px;
+}
+.backText{
+    font-size: 28px;
+    color: white;
+    text-decoration: none;
+}
+#startOrStop{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#start,#stop{
+   background-color: transparent;
+}
+#start:active,#stop:active{
+    transform: scale(0.9);
+}
+img{
+    width: 80px;
+}
+#stop{
+    display: none;
+}
+#counter{
+    margin: 10px;
+    font-size: 40px;
+}
+
+

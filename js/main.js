@@ -1,3 +1,5 @@
+let reloadAllTime = setInterval(dayAndHour,1000)
+
 function dayAndHour(){
 
     //dateContent
@@ -23,6 +25,11 @@ function dayAndHour(){
     let hourNow = document.getElementById('hourNow')
     //getHour
     let hour = date.getHours()
+    if (hour<10){
+        hour = '0'+date.getHours()
+    }else{
+        hour = date.getHours()
+    }
     //getMinutes
     let minutes = date.getMinutes()
     if (minutes<10){
@@ -42,9 +49,8 @@ function dayAndHour(){
 
 }
 
-let reloadAllTime = setInterval(dayAndHour,1000)
 
-//moodWorB
+//mode (ligth ot dark)
 let moodwhite = document.getElementById('whiteMood')
 let moodblack = document.getElementById('blackMood')
 
@@ -58,22 +64,45 @@ moodblack.onclick = ()=>{
 
 function whiteMood(){
     let body = document.getElementById('body')
+    let chronometer = document.getElementById('chronometer')
+
     body.style.backgroundColor='white'
     body.style.color='black'
     moodwhite.style.display='none'
     moodblack.style.display='block'
     moodblack.style.color='black'
-   
+
+    chronometer.style.border='solid 0.5px black'
+    chronometer.style.color='black'
+    chronometer.onmouseover=()=>{
+        chronometer.style.color='black'
+    }
+    chronometer.onmouseout=()=>{
+        chronometer.style.color='black'
+    }  
 }
 function blackMood(){
     let body = document.getElementById('body')
+    let chronometer = document.getElementById('chronometer')
+    
     body.style.backgroundColor='black'
     body.style.color='white'
     body.style.color='white'
     moodwhite.style.display='block'
     moodblack.style.display='none'
-    
+
+    chronometer.style.color='white'
+    chronometer.style.border='solid 0.5px white'
+    chronometer.onmouseover=()=>{
+        chronometer.style.color='black'
+    }
+    chronometer.onmouseout=()=>{
+        chronometer.style.color='white'
+    }
 }
+
+
+
 
 
 
